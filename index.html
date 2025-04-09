@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILLADY</title>
+    <link rel="stylesheet" href="./styles.css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-hearts"></div>
+    
+    <div class="container">
+        <div class="message-box">
+            <h1 id="romantic-message">Kamu Cantik <span class="heart-pulse">❤️</span></h1>
+        </div>
+
+        <div class="photo-gallery">
+            <div class="photo-container" id="photo-slider">
+                <!-- Foto akan dimasukkan via JavaScript -->
+            </div>
+            <div class="photo-controls">
+                <button id="prev-photo"><i class="fas fa-chevron-left"></i></button>
+                <span id="photo-count">1/5</span>
+                <button id="next-photo"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <audio id="romantic-music" loop>
+                <source src="./assets/fall.mp3" type="audio/mpeg">
+            </audio>
+            <div class="music-controls">
+                <button id="play-music"><i class="fas fa-play"></i></button>
+                <button id="pause-music"><i class="fas fa-pause"></i></button>
+                <input type="range" id="volume-control" min="0" max="1" step="0.1" value="0.7">
+            </div>
+            <div class="music-info">PLAYING MUSIC</div>
+        </div>
+    </div>
+
+    <script src="./script.js/script.js"></script>
+</body>
+</html>
